@@ -1,8 +1,14 @@
 package hangman;
 
+import java.util.Scanner;
+
 public class Main {
+
+	private static GallowsUI ui = new GallowsUI();
 	public static void main(String[] args) {
-		WordReader file = new WordReader("assignment2/words.txt");
-		System.out.println(file.getWord());
+
+		ui.initializeGame();
+		ui.playGame();
+		
 	}
 }
